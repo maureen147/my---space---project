@@ -1,0 +1,169 @@
+.home-bg {
+    background-image: url(../assets/image/home/background-home-desktop.jpg);
+    background-size: cover;
+    height: 100vh;
+   }
+   h1,h2{
+    padding: 0;
+    margin: 0;
+   }
+
+.home{
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+
+p{
+    line-height: 1.8;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+article{
+    width: 55%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+.btn{
+    width: 50%;
+    
+}
+
+.home-h1{
+    font-size: 1.8rem;
+    color: white;
+    font-weight: 400;
+}
+.home-span{
+    font-family: "Zen Antique", serif;
+    padding: 0;
+    font-size: 8rem;
+    text-align: center;
+    font-weight: 400;
+}
+
+.home-p{
+    font-size: 20px;
+    text-align: left;
+    width: 55%;
+    
+}
+
+.home-btn{
+    margin-top: 120px;
+    width: 190px;
+    height: 190px;
+    background-color: white;
+    font-weight: 400;
+    font-size: 2rem;
+    color: black;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.home-btn:hover{
+    box-shadow: 5px 5px 5px gray;
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 300px) and (max-width: 767px) {
+    .home-bg {
+        background-image: url(../assets/image/home/background-home-mobile.jpg);
+        background-size: cover;
+   }
+
+   .container{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 96vh;
+   }
+   article{
+    width: 100%;
+   }
+   .home-h1{
+    width: 90%;
+    font-size: .9rem;
+   }
+   .home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+   .home-span{
+    font-size: 4rem;
+   }
+   .home-p{
+    width: 95%;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.8rem;
+
+   }
+   .home-btn{
+    margin-top: 0;
+    
+   }
+   }
+   
+   /* Media Query for Tablets Ipads portrait mode */
+   @media (min-width: 768px) and (max-width: 1024px){
+    .home-bg {
+        background-image: url(../assets/image/home/background-home-tablet.jpg);
+        height: 100%;
+        background-size: cover;
+   }
+   .container{
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70%;
+   }
+   article{
+    width: 100%;
+    }
+   .home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+   .home-h1{
+    width: 90%;
+    font-size: 25px;
+   }
+   .home-span{
+    font-size: 8rem;
+   }
+   .home-p{
+    width: 95%;
+    text-align: center;
+    line-height: 2.2rem;
+
+   }
+   .home-btn{
+    margin-top: 0;
+    
+   }
+   }
+   
+   
+   
+   

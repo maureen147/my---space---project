@@ -1,0 +1,355 @@
+.destination-bg{
+    background-image: url(../assets/image/destination/background-destination-desktop.jpg);
+    
+}
+
+.destination{
+    padding-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* height: calc(100vh - 100px); */
+    
+}
+.left-side-dest{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 85vh;
+}
+.text{ 
+    width: 80%;
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+}
+.left-side-dest h1{
+    font-family: 'Mohave';
+    font-weight: 400;
+}
+.left-side-dest h1 span{
+    color: rgb(181, 168, 168);
+    padding-right: 10px;
+}
+.right-side-dest{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    align-items: flex-start;
+    justify-content: center;
+}
+.title-dest{
+    width: 78%;
+    margin-bottom: 40px;
+}
+
+.btn-dest{
+    /* border: 1px solid red; */
+    height: 50px;
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn-dest button{
+    position: relative;
+    border: none;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    /* border-bottom: 1px solid yellow; */
+    padding: 10px 0;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.btn-dest button:hover::after,.btn-dest button:focus::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0.275rem;
+    background-color: white;
+    left: 0;
+    bottom: 0;
+    transform: scale(1,1);
+    transition: transform .4s ease;
+}
+
+.title-dest h2{
+    font-size: 6rem;
+    font-weight: 400;
+    font-family: "Mohave", serif;
+}
+
+.title-dest p{
+    font-size: 22px;
+    
+}
+.border{
+    border: 1px solid gray;
+    width: 78%;
+    margin-bottom: 20px;
+}
+.ul-dest {
+    list-style: none;
+    width: 70%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.li-dest{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    word-spacing: 3px;
+}
+.span-dest{
+    font-size: 1.8rem;
+    font-weight: 500;
+    font-family: "Zen Antique", serif;
+    word-spacing: normal;
+}
+
+.btn-dest .active{
+    border-bottom: 5px solid white;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    /* border-bottom: 1px solid yellow; */
+    padding: 10px 0;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 300px) and (max-width: 767px) {
+    .destination-bg {
+       background: url(../assets/image/destination/background-destination-mobile.jpg);
+       background-size: cover;    
+   }
+   .destination{
+    padding-top: 70px;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 40px;
+   }
+   .left-side-dest{
+    justify-content: space-between;
+    width: 90%;
+    height: auto; 
+    gap: 20px;
+   }
+   img{
+    height: 200px;
+   }
+   .right-side-dest{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+.title-dest{
+    width: 90%;
+    text-align: center;
+    
+}
+
+.btn-dest{
+    /* border: 1px solid red; */
+    height: 50px;
+    width: 80%;
+    
+}
+.text{
+    width: 100%;
+    justify-content: center;
+}
+.btn-dest button{
+    position: relative;
+    border: none;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    /* border-bottom: 1px solid yellow; */
+    padding: 10px 0;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.btn-dest button:hover::after,.btn-dest button:focus::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0.275rem;
+    background-color: white;
+    left: 0;
+    bottom: 0;
+    transform: scale(1,1);
+    transition: transform .4s ease-in-out;
+}
+
+.title-dest h2{
+    font-size: 5rem;
+    font-weight: 300;
+    font-family: serif;
+}
+
+.title-dest p{
+    font-size: 20px;
+    line-height: 1.9rem;
+    
+}
+.border{
+    border: 1px solid gray;
+    width: 90%;
+    margin-bottom: 30px;
+}
+.ul-dest {
+    list-style: none;
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    margin-bottom: 59px;
+}
+.li-dest{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    word-spacing: 3px;
+}
+.span-dest{
+    font-size: 1.8rem;
+    font-weight: 500;
+    font-family: "Zen Antique", serif;
+    word-spacing: normal;
+}
+   }
+   
+   /* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px){
+   .destination-bg {
+    background: url(../assets/image/destination/background-destination-tablet.jpg);
+    background-size: cover;    
+}
+.destination{
+ padding-top: 150px;
+ flex-direction: column;
+ align-items: center;
+ width: 100%;
+ gap: 40px;
+ height: calc(100vh -100px);
+}
+.left-side-dest{
+ justify-content: space-between;
+ width: 90%;
+ height: auto; 
+ gap: 50px;
+}
+.text{ 
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+}
+.dest-img{
+ height: 300px;
+} 
+.right-side-dest{
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+ height: auto;
+ align-items: center;
+ justify-content: center;
+}
+.title-dest{
+ width: 90%;
+ text-align: center;
+ 
+}
+
+.btn-dest{
+ /* border: 1px solid red; */
+ height: 50px;
+ width: 60%;
+ display: flex;
+ 
+}
+.btn-dest button{
+ position: relative;
+ border: none;
+ background: transparent;
+ color: white;
+ cursor: pointer;
+ /* border-bottom: 1px solid yellow; */
+ padding: 10px 0;
+ font-size: 1.2rem;
+ margin-bottom: 20px;
+ 
+}
+
+
+
+.btn-dest button:hover::after,.btn-dest button:focus::after {
+ content: '';
+ position: absolute;
+ width: 100%;
+ height: 0.275rem;
+ background-color: white;
+ left: 0;
+ bottom: 0;
+ transform: scale(1,1);
+ transition: transform .4s ease-in-out;
+}
+
+.title-dest h2{
+ font-size: 5rem;
+ font-weight: 300;
+ font-family: serif;
+}
+
+.title-dest p{
+ font-size: 20px;
+ line-height: 1.9rem;
+ 
+}
+.border{
+ border: 1px solid gray;
+ width: 90%;
+ margin-bottom: 30px;
+}
+.ul-dest {
+ list-style: none;
+ width: 70%;
+ height: auto;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ text-align: center;
+ gap: 30px;
+ margin-bottom: 59px;
+}
+.li-dest{
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ word-spacing: 3px;
+}
+.span-dest{
+ font-size: 1.8rem;
+ font-weight: 500;
+ font-family: "Zen Antique", serif;
+ word-spacing: normal;
+}
+}

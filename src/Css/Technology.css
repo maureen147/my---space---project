@@ -1,0 +1,286 @@
+.technology-bg{
+    background: url(../assets/image/technology/background-technology-desktop.jpg);
+    height: 100vh;
+}
+.technology{
+    padding-top: 100px;
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    width: 90%;
+}
+.title-page-tech{
+    display: flex;
+    justify-content: center;
+    width: 25%;
+}
+.title-page-tech h1{
+    font-family: "Mohave", serif;
+    font-weight: 300;
+}
+.title-page-tech span{
+    padding-right: 20px;
+}
+.content-tech{
+    display: flex;
+    width: 100%;
+}
+.left-side-tech{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 60vh;
+    width: 60%;
+}
+.btns-tech{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 60%;
+}
+.btns-tech button{
+    /* padding: 20px 25px; */
+    height: 60px;
+    width: 60px;
+    border: 1px solid white;
+    color: aliceblue;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+}
+.btns-tech button:hover,.btns-tech .active{
+        color: black;
+        background-color: white;
+}
+.about-tech{
+    width: 75%;
+}
+.about-tech h2{
+    font-family: "Mohave", serif;
+    font-weight: 500;
+}
+.about-tech h1{
+    font-size: 6rem;
+    font-family: "Mohave", serif;
+    font-weight: 300;
+}
+.about-tech p{
+    width: 85%;
+    font-size: 1.23rem;
+    line-height: 1.9rem;
+}
+.mobile-tech{
+    display: none;
+}
+
+@media (min-width: 300px) and (max-width: 767px) {
+    .technology-bg{
+        background: url(../assets/image/technology/background-technology-mobile.jpg);
+        height: unset;
+    }
+    .technology{
+        padding-top: 70px;
+        /* width: 100%; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    main{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .title-page-tech{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .title-page-tech h1{
+        font-family: "Mohave", serif;
+        font-weight: 300;
+    }
+    .title-page-tech span{
+        padding-right: 20px;
+    }
+    .content-tech{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        gap: 30px;
+    }
+    .left-side-tech{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+        height: unset;
+        width: 100%;
+        gap: 20px;
+    }
+    .btns-tech{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 70%;
+    }
+    .btns-tech button{
+        /* padding: 20px 25px; */
+        height: 60px;
+        width: 60px;
+        border: 1px solid white;
+        color: aliceblue;
+        font-size: 1.5rem;
+        border-radius: 50%;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    .btns-tech button:hover,.btns-tech button:focus{
+            color: black;
+            background-color: white;
+    }
+    .about-tech{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        width: 90%;
+        gap: 10px
+    }
+    .about-tech h2{
+        font-family: "Mohave", serif;
+        font-weight: 400;
+    }
+    .about-tech h1{
+        font-size: 3rem;
+        font-family: "Mohave", serif;
+        font-weight: 500;
+    }
+    .about-tech p{
+        width: 95%;
+        font-size: 1rem;
+        line-height: 1.9rem;
+    }
+    .mobile-tech{
+        display: block;
+        width: 100%;
+    }
+    .desktop-tech{
+        display: none;
+
+    }
+    .right-side-tech{
+        width: 100%;
+    }
+}
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px){
+    .technology-bg{
+        background: url(../assets/image/technology/background-technology-tablet.jpg);
+        height: 100vh;
+    }
+    .technology{
+        padding-top: 140px;
+        /* width: 100%; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    main{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        
+    }
+    .title-page-tech{
+        display: flex;
+        justify-content: center;
+        width: 45%;
+    }
+    .title-page-tech h1{
+        font-family: "Mohave", serif;
+        font-weight: 300;
+    }
+    .title-page-tech span{
+        padding-right: 20px;
+    }
+    .content-tech{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        gap: 50px;
+    }
+    .left-side-tech{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+        height: unset;
+        width: 100%;
+        gap: 50px;
+    }
+    .btns-tech{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 40%;
+    }
+    .btns-tech button{
+        /* padding: 20px 25px; */
+        height: 60px;
+        width: 60px;
+        border: 1px solid white;
+        color: aliceblue;
+        font-size: 1.5rem;
+        border-radius: 50%;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    .btns-tech button:hover,.btns-tech button:focus{
+            color: black;
+            background-color: white;
+    }
+    .about-tech{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        width: 70%;
+        gap: 20px
+    }
+    .about-tech h2{
+        font-family: "Mohave", serif;
+        font-weight: 400;
+        font-size: 2rem;
+    }
+    .about-tech h1{
+        font-size: 5rem;
+        font-family: "Mohave", serif;
+        font-weight: 500;
+    }
+    .about-tech p{
+        width: 100%;
+        font-size: 1.4rem;
+        line-height: 1.9rem;
+    }
+    .mobile-tech{
+        display: block;
+        width: 100%;
+    }
+    .desktop-tech{
+        display: none;
+
+    }
+    .right-side-tech{
+        width: 100%;
+    }
+}
