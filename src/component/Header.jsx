@@ -15,7 +15,7 @@ const Header = () => {
   return (
     <>
       <div className="header">
-        <div className="left-side">
+        <div  className="left-side">
           <img src={logo} />
         </div>
         <div className="border-header">
